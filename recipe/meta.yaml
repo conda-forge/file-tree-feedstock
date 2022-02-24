@@ -25,6 +25,8 @@ requirements:
     - parse
     - python >=3.6
     - xarray
+    - rich
+    - textual
 
 test:
   imports:
