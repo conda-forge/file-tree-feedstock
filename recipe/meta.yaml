@@ -1,5 +1,5 @@
 {% set name = "file-tree" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/file-tree-{{ version }}.tar.gz
-  sha256: c8b01f6481c91b8183893b22cf8e8cc06bfbc7f7313618a7a7d649b0b18b4c83
+  sha256: 0c1fbc4d1d2ff248c99e264d36c65e4049d11b02a41ee345c7621bfc33a536ff
 
 build:
   number: 0
@@ -26,7 +26,6 @@ requirements:
     - python >=3.6
     - xarray
     - rich
-    - textual
 
 test:
   imports:
