@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "file-tree" %}
 {% set version = "1.6.0" %}
 
@@ -11,20 +12,20 @@ source:
   sha256: d36dd6e0a4f2074014180f4a60ff091e10eebe0255f0bc2b855a039ebfec71df
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.10
+    - python {{ python_min }}
     - hatchling
   run:
     - numpy
     - pandas
     - parse
-    - python >=3.10
+    - python >={{ python_min }}
     - xarray
     - rich
 
@@ -35,6 +36,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://git.fmrib.ox.ac.uk/ndcn0236/file-tree
