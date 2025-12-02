@@ -20,7 +20,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - hatchling
+    - uv-build
   run:
     - numpy
     - pandas
