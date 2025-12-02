@@ -39,11 +39,11 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://git.fmrib.ox.ac.uk/ndcn0236/file-tree
+  home: https://git.fmrib.ox.ac.uk/fsl/file-tree
   summary: Describe structure directory for pipeline
   license: MIT
   license_file: LICENSE
-  doc_url: https://open.win.ox.ac.uk/pages/ndcn0236/file-tree
+  doc_url: https://open.oxcin.ox.ac.uk/pages/fsl/file-tree/stable
 
 extra:
   recipe-maintainers:
